@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Yomi Randomiser</title>
+  </head>
+  <body>
+    <h2>Fantasy Strike -based Lineup Generator</h2>
+    <p>
+      This is a tool (constructed by GGG) for choosing a lineup given a set of
+      three Yomi/Puzzle Strike/Fantasy Strike characters and a predetermined
+      seed for a best-of-five match using the Fantasy Strike best-of-five ranked
+      mode system. Choose your three characters from the dropdown menu and a
+      number from 1 to 12 (given by your tournament organiser, or hit "random"
+      if you're using this casually), and enter for each match whether you win
+      or lose.
+    </p>
+
+    <select id="char1" name="Character one">
+      <option value="Argagarg">Argagarg</option>
+      <option value="Bal-Bas-Beta">Bal-Bas-Beta</option>
+      <option value="DeGrey">DeGrey</option>
+      <option value="Geiger">Geiger</option>
+      <option value="Gloria">Gloria</option>
+      <option value="Grave">Grave</option>
+      <option value="Gwen">Gwen</option>
+      <option value="Jaina">Jaina</option>
+      <option value="Lum">Lum</option>
+      <option value="Menelker">Menelker</option>
+      <option value="Midori">Midori</option>
+      <option value="Onimaru">Onimaru</option>
+      <option value="Persephone">Persephone</option>
+      <option value="Quince">Quince</option>
+      <option value="Rook">Rook</option>
+      <option value="Setsuki">Setsuki</option>
+      <option value="Troq">Troq</option>
+      <option value="Valerie">Valerie</option>
+      <option value="Vendetta">Vendetta</option>
+      <option value="Zane">Zane</option>
+    </select>
+
+    <select id="char2" name="Character two">
+      <option value="Argagarg">Argagarg</option>
+      <option value="Bal-Bas-Beta">Bal-Bas-Beta</option>
+      <option value="DeGrey">DeGrey</option>
+      <option value="Geiger">Geiger</option>
+      <option value="Gloria">Gloria</option>
+      <option value="Grave">Grave</option>
+      <option value="Gwen">Gwen</option>
+      <option value="Jaina">Jaina</option>
+      <option value="Lum">Lum</option>
+      <option value="Menelker">Menelker</option>
+      <option value="Midori">Midori</option>
+      <option value="Onimaru">Onimaru</option>
+      <option value="Persephone">Persephone</option>
+      <option value="Quince">Quince</option>
+      <option value="Rook">Rook</option>
+      <option value="Setsuki">Setsuki</option>
+      <option value="Troq">Troq</option>
+      <option value="Valerie">Valerie</option>
+      <option value="Vendetta">Vendetta</option>
+      <option value="Zane">Zane</option>
+    </select>
+
+    <select id="char3" name="Character three">
+      <option value="Argagarg">Argagarg</option>
+      <option value="Bal-Bas-Beta">Bal-Bas-Beta</option>
+      <option value="DeGrey">DeGrey</option>
+      <option value="Geiger">Geiger</option>
+      <option value="Gloria">Gloria</option>
+      <option value="Grave">Grave</option>
+      <option value="Gwen">Gwen</option>
+      <option value="Jaina">Jaina</option>
+      <option value="Lum">Lum</option>
+      <option value="Menelker">Menelker</option>
+      <option value="Midori">Midori</option>
+      <option value="Onimaru">Onimaru</option>
+      <option value="Persephone">Persephone</option>
+      <option value="Quince">Quince</option>
+      <option value="Rook">Rook</option>
+      <option value="Setsuki">Setsuki</option>
+      <option value="Troq">Troq</option>
+      <option value="Valerie">Valerie</option>
+      <option value="Vendetta">Vendetta</option>
+      <option value="Zane">Zane</option>
+    </select>
+
+    <input type="text" id="seed" />
+
+    <button id="go">Go!</button>
+
+    <button id="random">Random!</button>
+
+    <div id="box"></div>
+
+    <script src="yomi_randomiser.js"></script>
+  </body>
+</html>
