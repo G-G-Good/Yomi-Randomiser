@@ -89,7 +89,7 @@ function lose2() {
 function win3() {
   removeButtons(box);
   if (losers.length == 0) {
-    displayStr(box, `You won the set!`);
+    displayStr(box, `You won the match!`);
     return;
   }
 
@@ -107,7 +107,7 @@ function lose3() {
   removeButtons(box);
   losers.push(pick3);
   if (losers.length == 3) {
-    displayStr(box, `You lost the set.`);
+    displayStr(box, `You lost the match.`);
     return;
   }
 
@@ -124,7 +124,7 @@ function lose3() {
 function win4() {
   removeButtons(box);
   if (losers.length <= 1) {
-    displayStr(box, `You won the set!`);
+    displayStr(box, `You won the match!`);
     return;
   }
 
@@ -141,7 +141,7 @@ function win4() {
 function lose4() {
   removeButtons(box);
   if (losers.length == 3) {
-    displayStr(box, `You lost the set.`);
+    displayStr(box, `You lost the match.`);
     return;
   }
 
@@ -157,12 +157,12 @@ function lose4() {
 
 function win5() {
   removeButtons(box);
-  displayStr(box, "You won the set!");
+  displayStr(box, "You won the match!");
 }
 
 function lose5() {
   removeButtons(box);
-  displayStr(box, "You lost the set.");
+  displayStr(box, "You lost the match.");
 }
 
 let randStart = () => {
